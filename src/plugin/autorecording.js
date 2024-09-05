@@ -8,15 +8,15 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 const text = m.body.slice(prefix.length + cmd.length).trim();
 
   if (cmd === 'autorecording') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*THIS IS AN OWNER COMMAND...*");
     let responseMessage;
 
     if (text === 'on') {
       config.AUTO_RECORDING = true;
-      responseMessage = "Auto-Recording has been enabled.";
+      responseMessage = "*Auto-Recording has been enabled...*";
     } else if (text === 'off') {
       config.AUTO_RECORDING = false;
-      responseMessage = "Auto-Recording has been disabled.";
+      responseMessage = "*Auto-Recording has been disabled...*";
     } else {
       responseMessage = "Usage:\n- `autorecording on`: Enable Auto-Recording\n- `autorecording off`: Disable Auto-Recording";
     }
