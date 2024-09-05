@@ -4,7 +4,7 @@
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/binuka2009/Binuka-MD-V1/",
+  "repository": "https://github.com/binuka2009/Binuka-MD-V1",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
