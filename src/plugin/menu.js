@@ -73,7 +73,7 @@ const test = async (m, Matrix) => {
   const prefix = config.PREFIX;
 const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
        
-       const mode = config.MODE === 'public' ? 'public' : 'private';
+       const mode = config.MODE === 'private' ? 'public' : 'public';
        const pref = config.PREFIX;
            
         const validCommands = ['list', 'plugins', 'menu'];
