@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/Binuka-MD-V1"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=Binuka-MD-V1-+v2+MultiDevice;Developed+by+Binuka Lasad Udayanga;Give+star+and+forks+this+Repo+🌟" alt="Binukareadme"></a>
+  <a href="https://github.com/Binuka-MD-V1"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=Binuka-MD-V1-;Developed+by+Binuka+Lasad+Udayanga;Give+star+and+forks+this+Repo+🌟" alt="Binukareadme"></a>
 </p>
 
 ## 🚀 Getting Started
