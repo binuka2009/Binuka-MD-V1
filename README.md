@@ -8,13 +8,13 @@
 
 ## üöÄ Getting Started
 
-To get started with Ethix-MD-V2, follow these steps:
+To get started with Binuka-MD-V1 WA Bot, follow these steps:
 
 ### 1. Fork This Repository
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-<a href='https://github.com/Ethix-Xsid/Ethix-MD-V2/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
+<a href='https://github.com/binuka2009/Binuka-MD-V1/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
 
 ### 2. Get Session ID via Pair Code
 
@@ -24,7 +24,7 @@ You'll need a session ID to run the bot. Click the button below to obtain your s
 
 ## üöÄ Deployment Options
 
-You can deploy the Ethix-MD-V2 bot using two methods: **Heroku** or **Termux**. Choose the method that suits you best.
+You can deploy the Binuka-MD-V1 bot using two methods: **Heroku** or **Termux**. Choose the method that suits you best.
 
 ### Deploy to Heroku
 
@@ -67,7 +67,7 @@ You can also deploy the bot directly on your Android device using Termux. Here‚Ä
    Clone the forked repository using the following command:
 
    ```bash
-   git clone https://github.com/Ethix-Xsid/Ethix-MD-V2.git
+   git clone https://github.com/binuka2009/Binuka-MD-V1.git
    ```
 
 4. **Navigate to the Project Directory:**
@@ -75,7 +75,7 @@ You can also deploy the bot directly on your Android device using Termux. Here‚Ä
    Change into the project directory:
 
    ```bash
-   cd Ethix-MD-V2
+   cd Binuka-MD-V1
    ```
 
 5. **Set the `SESSION_ID` in the `.env` File:**
@@ -122,11 +122,11 @@ You can also deploy the bot directly on your Android device using Termux. Here‚Ä
 
    Make sure to keep Termux open to maintain the bot's operation.
 
-## üåê Join WhatsApp Group, Channel, and Contact the Owner
+## üåê Contact the Owner...
 
 Stay connected with the latest updates and community by joining our official WhatsApp group and channel. You can also contact the owner directly.
 
-- **Owner WhatsApp Number:** +919142294671
+- **Owner WhatsApp Number:** +94769089430
   - *Note:* Please save the owner's number in your contacts before sending a message.
 
-- **WhatsApp Channel:** [Join Here](https://whatsapp.com/channel/0029VaWJMi3GehEE9e1YsI1S)
+====================================================================
