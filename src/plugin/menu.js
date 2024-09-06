@@ -89,13 +89,13 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ʙɪɴᴜᴋᴀ-ᴍᴅ*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.1.0
-│👨‍💻 ᴏᴡɴᴇʀ : *ɢ.ʏ.ʙ.ʟ. ᴜᴅᴀʏᴀɴɢᴀ*      
-│👤 ɴᴜᴍʙᴇʀ: 94769089430
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: [${pref}]
+│➣ ʙᴏᴛ ɴᴀᴍᴇ: *ʙɪɴᴜᴋᴀ-ᴍᴅ*
+│➣ ᴠᴇʀꜱɪᴏɴ: 2.1.0
+│➣ ᴏᴡɴᴇʀ : *ɢ.ʏ.ʙ.ʟ. ᴜᴅᴀʏᴀɴɢᴀ*      
+│➣ ɴᴜᴍʙᴇʀ: 94769089430
+│➣ ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│➣ ᴍᴏᴅᴇ: *${mode}*
+│➣ ᴘʀᴇғɪx: [${pref}]
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
@@ -220,13 +220,13 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
       if (selectedId == "View All Menu") {
         const str = `Hey ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ʙɪɴᴜᴋᴀ-ᴍᴅ*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ɢ.ʏ.ʙ.ʟ. ᴜᴅᴀʏᴀɴɢᴀ*      
-│👤 ɴᴜᴍʙᴇʀ: 94769089430
-│💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${config.MODE}*
-│💫 ᴘʀᴇғɪx: [${pref}]
+│➣ ʙᴏᴛ ɴᴀᴍᴇ: *ʙɪɴᴜᴋᴀ-ᴍᴅ*
+│➣ ᴠᴇʀꜱɪᴏɴ: 2.0.3
+│➣ ᴏᴡɴᴇʀ : *ɢ.ʏ.ʙ.ʟ. ᴜᴅᴀʏᴀɴɢᴀ*      
+│➣ ɴᴜᴍʙᴇʀ: 94769089430
+│➣ ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│➣ ᴍᴏᴅᴇ: *${config.MODE}*
+│➣ ᴘʀᴇғɪx: [${pref}]
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿
@@ -337,11 +337,6 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             message: {
                 contactMessage: {
                     displayName: `Binuka-MD`,
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'Binuka-MD'\nitem1.TEL;waid=${
-                        m.sender.split("@")[0]
-                    }:${
-                        m.sender.split("@")[0]
-                    }\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
                 }
             }
         };
@@ -351,7 +346,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
   contextInfo: { 
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
