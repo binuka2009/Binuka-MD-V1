@@ -21,8 +21,16 @@ export default async function GroupParticipants(sock, { id, participants, action
                     const joinDate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
                     const membersCount = metadata.participants.length;
             sock.sendMessage(id, {
-               text: `> Hello @${userName}! Welcome to *${metadata.subject}*.\n> You are the ${membersCount}th member.\n> Joined at: ${joinTime} on ${joinDate}
-"`, contextInfo: {
+               text: `┌─❖
+│「 𝗛𝗶  」
+└┬❖ 「  @${userName}  」
+   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+   │✑  *${metadata.subject}*
+   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │✑ ${membersCount}th
+   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
+   │✑ ${joinTime} ${joinDate}
+   └───────────────┈···▸▸>`, contextInfo: {
                   mentionedJid: [jid],
                   externalAdReply: {
                      title: `Welcome`,
@@ -40,7 +48,16 @@ export default async function GroupParticipants(sock, { id, participants, action
                     const leaveDate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
                     const membersCount = metadata.participants.length;
             sock.sendMessage(id, {
-               text: `> Goodbye @${userName} from ${metadata.subject}.\n> We are now ${membersCount} in the group.\n> Left at: ${leaveTime} on ${leaveDate}"`, contextInfo: {
+               text: `┌─❖
+│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲  」
+└┬❖ 「 @${userName}  」
+   │✑  𝗟𝗲𝗳𝘁 
+   │✑ ${metadata.subject}
+   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │✑ ${membersCount}th
+   │✑  𝗧𝗶𝗺𝗲 : 
+   │✑  ${leaveTime} ${leaveDate}
+   └───────────────┈···▸▸>`, contextInfo: {
                   mentionedJid: [jid],
                   externalAdReply: {
                      title: `Leave`,
