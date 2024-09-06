@@ -43,17 +43,17 @@ const time2 = moment().tz("Asia/Colombo").format("HH:mm:ss");
 let pushwish = "";
 
 if (time2 < "05:00:00") {
-  pushwish = `Good Morning 🌄`;
+  pushwish = `ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ᴅᴇᴀʀ`;
 } else if (time2 < "11:00:00") {
-  pushwish = `Good Morning 🌄`;
+  pushwish = `ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ᴅᴇᴀʀ`;
 } else if (time2 < "15:00:00") {
-  pushwish = `Good Afternoon 🌅`;
+  pushwish = `ɢᴏᴏᴅ ᴀꜰᴛᴇʀɴᴏᴏɴ ᴅᴇᴀʀ`;
 } else if (time2 < "18:00:00") {
-  pushwish = `Good Evening 🌃`;
+  pushwish = `ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ ᴅᴇᴀʀ`;
 } else if (time2 < "19:00:00") {
-  pushwish = `Good Evening 🌃`;
+  pushwish = `ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ ᴅᴇᴀʀ`;
 } else {
-  pushwish = `Good Night 🌌`;
+  pushwish = `ɢᴏᴏᴅ ɴɪɢʜᴛ ᴅᴇᴀʀ`;
 }
 
 const test = async (m, Matrix) => {
@@ -218,7 +218,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
     });
   }
       if (selectedId == "View All Menu") {
-        const str = `Hey ${m.pushName} ${pushwish}
+        const str = `ʜᴇʏ, ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
 │➣ ʙᴏᴛ ɴᴀᴍᴇ: *ʙɪɴᴜᴋᴀ-ᴍᴅ*
 │➣ ᴠᴇʀꜱɪᴏɴ: 2.0.3
@@ -456,7 +456,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -495,7 +495,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -531,7 +531,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -559,7 +559,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -590,7 +590,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -622,7 +622,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -655,7 +655,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
