@@ -337,6 +337,11 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             message: {
                 contactMessage: {
                     displayName: `Binuka-MD`,
+                  vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'Ethix-MD'\nitem1.TEL;waid=${
+                        m.sender.split("@")[0]
+                    }:${
+                        m.sender.split("@")[0]
+                    }\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
                 }
             }
         };
@@ -385,7 +390,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "Binuka-MD",
@@ -426,7 +431,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
     mentionedJid: [m.sender], 
     forwardingScore: 9999,
-    isForwarded: true,
+    isForwarded: false,
   }
 }, {
   quoted: m
