@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+4tttimport dotenv from 'dotenv';
 dotenv.config();
 
 import {
@@ -51,6 +51,7 @@ async function downloadSessionData() {
     if (!config.SESSION_ID) {
         console.error('Please add your session to SESSION_ID env !!');
         return false;
+    }
     }
     const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
