@@ -53,7 +53,7 @@ async function downloadSessionData() {
         return false;
     }
     }
-    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
+    const sessdata = config.SESSION_ID.split("QUEENELISA;;;==")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
