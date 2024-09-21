@@ -52,7 +52,6 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         return false;
     }
-    }
     const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
@@ -71,20 +70,20 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 Binuka-MD-V1 using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 Ethix-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: useQR,
-            browser: ["Binuka-MD-V1", "safari", "3.3"],
+            browser: ["Ethix-MD", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Binuka-MD-V1 whatsapp user bot" };
+                return { conversation: "Ethix-MD whatsapp user bot" };
             }
         });
 
@@ -96,8 +95,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("Binuka-MD WA Bot Connect Successful...✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `*Binuka-MD WA Bot Connect Successful...✅*` });
+                    console.log(chalk.green("😃 Integration Successful️ ✅"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -139,15 +138,15 @@ async function start() {
 
 async function init() {
     if (fs.existsSync(credsPath)) {
-        console.log("🔒 Session file found...");
+        console.log("🔒 Session file found, proceeding without QR code.");
         await start();
     } else {
         const sessionDownloaded = await downloadSessionData();
         if (sessionDownloaded) {
-            console.log("🔒 Session downloaded, starting bot...");
+            console.log("🔒 Session downloaded, starting bot.");
             await start();
         } else {
-            console.log("No session found or downloaded...");
+            console.log("No session found or downloaded, QR code will be printed for authentication.");
             useQR = true;
             await start();
         }
