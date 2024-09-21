@@ -126,7 +126,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
         },
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"𝚻𝚫𝚸 𝐅𝚯𝚪 𝚯𝚸𝚵𝚴 𝚳𝚵𝚴𝐔",
+                  "buttonParamsJson": `{"title":"TAP OPEN MENU COMMANDS",
                  "sections":
                    [{
                     "title":"𝘽𝙞𝙣𝙪𝙠𝙖-𝙈𝘿 𝘼𝙡𝙡 𝙈𝙚𝙣𝙪",
