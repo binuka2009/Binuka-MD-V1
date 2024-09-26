@@ -52,13 +52,13 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         return false;
     }
-    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
+    const sessdata = config.SESSION_ID.split("Binuka-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
-        console.log("🔒 Session Successfully Loaded !!");
+        console.log("*Binuka-MD WA Bot Session ID Download Successful..🫶 Deploy Your Bot...🔥*");
         return true;
     } catch (error) {
        // console.error('Failed to download session data:', error);
@@ -70,20 +70,20 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 Ethix-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`Binuka-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: useQR,
-            browser: ["Ethix-MD", "safari", "3.3"],
+            browser: ["Binuka-MD", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Ethix-MD whatsapp user bot" };
+                return { conversation: "Binuka-MD whatsapp user bot" };
             }
         });
 
@@ -95,11 +95,11 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("😃 Integration Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
+                    console.log(chalk.green("Binuka-MD WA Bot Whatsapp To Connect Successful...😊✅"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `*Binuka-MD WA Bot Whatsapp To Connect Successful...😊✅*` });
                     initialConnection = false;
                 } else {
-                    console.log(chalk.blue("♻️ Connection reestablished after restart."));
+                    console.log(chalk.blue("Connection reestablished after restart...😐"));
                 }
             }
         });
@@ -156,7 +156,7 @@ async function init() {
 init();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello, I Am Binuka-MD Official WA Bot..🔥⚡');
 });
 
 app.listen(PORT, () => {
