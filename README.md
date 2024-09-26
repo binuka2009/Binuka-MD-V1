@@ -6,6 +6,8 @@
   <a href="https://github.com/Binuka-MD-V1"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=Binuka-MD-V1+WA+Bot;Developed+By+G.Y.B.L.+Udayanga;Give+star+and+forks+this+Repo+🌟" alt="Binukareadme"></a>
 </p>
 
+<img src="https://telegra.ph/file/982640de2d7f18fced629.jpg">
+
 ## 🚀 Getting Started
 
 To get started with Binuka-MD-V1 WA Bot, follow these steps:
