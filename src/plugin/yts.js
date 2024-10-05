@@ -27,7 +27,7 @@ const song = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
   
-  const validCommands = ['yts', 'ytsearch', 'song'];
+  const validCommands = ['yts', 'ytsearch'];
 
   if (validCommands.includes(cmd)) {
     if (!text) return m.reply('Please provide a YouTube URL or search query');
@@ -76,13 +76,13 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `📍HANSAMAL-MD Video Downloader\n\n`
+                text: `Binuka-MD Video, Song Downloader\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By HANSAMAL-MD"
+                text: "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙɪɴᴜᴋᴀ ᴍᴅ"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/44826e95f6e863548e408.jpg` } }, { upload: Matrix.waUploadToServer })),
+                ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/982640de2d7f18fced629.jpg` } }, { upload: Matrix.waUploadToServer })),
                 title: ``,
                 gifPlayback: true,
                 subtitle: "",
@@ -93,7 +93,7 @@ const song = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🔖 Select a video",
+                      title: "🎬 Select a video",
                       sections: [
                         {
                           title: "😎 Top 10 YouTube Results - Videos",
